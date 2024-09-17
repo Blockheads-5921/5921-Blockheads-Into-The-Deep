@@ -8,6 +8,8 @@ public class HardwareDrive
     //Motors
     public DcMotorEx lf   = null;
     public DcMotorEx  rf   = null;
+
+    public DcMotorEx ANOTHER_MOTOR = null;
     public DcMotorEx  lb   = null;
     public DcMotorEx  rb   = null;
 
