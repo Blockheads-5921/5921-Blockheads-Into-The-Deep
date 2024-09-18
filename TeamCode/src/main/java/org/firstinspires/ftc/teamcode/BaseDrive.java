@@ -36,6 +36,8 @@ public class BaseDrive extends OpMode {
     @Override
     public void loop() {
 
+        telemetry.addData("left front encoder position (clicks)", robot.lf.getCurrentPosition());
+
     }
 
     /*
@@ -43,5 +45,6 @@ public class BaseDrive extends OpMode {
      */
     @Override
     public void stop() {
+
     }
 }
