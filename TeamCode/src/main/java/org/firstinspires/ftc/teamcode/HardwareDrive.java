@@ -27,10 +27,10 @@ public class HardwareDrive
         hwMap = ahwMap;
 
         // Define and Initialize Motors
-        lf  = hwMap.get(DcMotorEx.class, "left_front");
-        rf  = hwMap.get(DcMotorEx.class, "right_front");
-        lb  = hwMap.get(DcMotorEx.class, "left_back");
-        rb  = hwMap.get(DcMotorEx.class, "right_back");
+//        lf  = hwMap.get(DcMotorEx.class, "left_front");
+        rf  = hwMap.get(DcMotorEx.class, "Right-Front");
+//        lb  = hwMap.get(DcMotorEx.class, "left_back");
+//        rb  = hwMap.get(DcMotorEx.class, "right_back");
 
         //IMU initiation
 //        BNO055IMU.Parameters parameters = new BNO055IMU.Parameters();
@@ -46,22 +46,22 @@ public class HardwareDrive
 
 
         //Reverse Motor
-        lf.setDirection(DcMotorEx.Direction.REVERSE);
-        lb.setDirection(DcMotorEx.Direction.REVERSE);
+//        lf.setDirection(DcMotorEx.Direction.REVERSE);
+//        lb.setDirection(DcMotorEx.Direction.REVERSE);
         rf.setDirection(DcMotorEx.Direction.FORWARD);
-        rb.setDirection(DcMotorEx.Direction.FORWARD);
+//        rb.setDirection(DcMotorEx.Direction.FORWARD);
 
         // Set all motors to zero power
-        lf.setPower(0);
+//        lf.setPower(0);
         rf.setPower(0);
-        lb.setPower(0);
-        rb.setPower(0);
+//        lb.setPower(0);
+//        rb.setPower(0);
 
         // Set all motors to run without encoders.
         // May want to use RUN_USING_ENCODERS if encoders are installed.
-        lf.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        lb.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+//        lf.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+//        lb.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
         rf.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        rb.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+//        rb.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
     }
 }

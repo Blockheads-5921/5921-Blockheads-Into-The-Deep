@@ -5,7 +5,7 @@ import android.view.View;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
-@TeleOp(name="Base Drive", group="Drive")
+@TeleOp(name="Base Drive-Preston", group="Drive")
 //@Disabled
 public class BaseDrivePreston extends OpMode {
     /* Declare OpMode members. */
@@ -42,7 +42,7 @@ public class BaseDrivePreston extends OpMode {
         JoystickBIG = gamepad1.left_stick_y;
 
         robot.rf.setPower(JoystickBIG);
-        telemetry.addData( "left front encoder position (clicks)", robot.lf.getPower());
+        telemetry.addData( "left front encoder position (clicks)", robot.rf.getPower());
         telemetry.addData("Joystick", gamepad1.left_stick_y);
     }
 
