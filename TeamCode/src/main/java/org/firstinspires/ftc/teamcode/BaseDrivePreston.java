@@ -42,7 +42,7 @@ public class BaseDrivePreston extends OpMode {
         JoystickBIG = gamepad1.left_stick_y;
 
         robot.rf.setPower(JoystickBIG);
-        telemetry.addData( "left front encoder position (clicks)", robot.rf.getPower());
+        telemetry.addData( "left front motor power", robot.rf.getPower());
         telemetry.addData("Joystick", gamepad1.left_stick_y);
     }
 
